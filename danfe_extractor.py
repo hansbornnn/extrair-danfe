@@ -10,7 +10,6 @@ from typing import Iterable
 import fitz  # PyMuPDF
 import pandas as pd
 
-
 @dataclass
 class ResultadoDanfe:
     arquivo: str
