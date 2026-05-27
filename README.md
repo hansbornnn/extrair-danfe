@@ -41,16 +41,6 @@ Imprime a tabela no terminal e salva `resultado_danfe.xlsx` na pasta atual.
 - A extração por coordenadas funciona bem para DANFEs no layout padrão SEFAZ. Se o seu PDF vier de algum ERP com layout bem diferente, o fallback por texto tenta cobrir.
 - Não depende de OCR — funciona apenas com PDFs que têm texto embutido (a grande maioria dos DANFEs gerados digitalmente).
 
-Estrutura do código
-
-buscar_numero_nf_por_coordenada()    pega o nº no canto superior direito
-buscar_numero_nf_no_texto()          fallback por regex no texto da página
-buscar_quantidade_por_coordenada()   localiza o campo no bloco de transporte
-buscar_quantidade_no_texto()         fallback por texto corrido
-extrair_danfes_do_pdf()              orquestra tudo para um PDF
-gerar_excel()                        exporta o DataFrame para .xlsx
-app_streamlit()                      interface we
-
 Dependências
 
 PyMuPDF
