@@ -17,7 +17,6 @@ Programa Python que lê PDFs de DANFE e extrai o **número da nota fiscal** e a 
 
 pip install pymupdf pandas openpyxl streamlit
 
-
 ---
 
 ## Como usar
@@ -42,8 +41,6 @@ Imprime a tabela no terminal e salva `resultado_danfe.xlsx` na pasta atual.
 - A extração por coordenadas funciona bem para DANFEs no layout padrão SEFAZ. Se o seu PDF vier de algum ERP com layout bem diferente, o fallback por texto tenta cobrir.
 - Não depende de OCR — funciona apenas com PDFs que têm texto embutido (a grande maioria dos DANFEs gerados digitalmente).
 
-
-
 Estrutura do código
 
 buscar_numero_nf_por_coordenada()    pega o nº no canto superior direito
@@ -54,11 +51,9 @@ extrair_danfes_do_pdf()              orquestra tudo para um PDF
 gerar_excel()                        exporta o DataFrame para .xlsx
 app_streamlit()                      interface we
 
+Dependências
 
- Dependências
-
-
-[PyMuPDF](https://pymupdf.readthedocs.io/) | Leitura e extração de texto/coordenadas do PDF |
-[pandas](https://pandas.pydata.org/) | Montagem e manipulação da tabela de resultados |
-[openpyxl](https://openpyxl.readthedocs.io/) | Geração do arquivo Excel |
-[streamlit](https://streamlit.io/) | Interface web (opcional, só para o modo web) |
+PyMuPDF
+pandas
+openpyxl
+streamlit
